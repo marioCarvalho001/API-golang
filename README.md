@@ -4,7 +4,7 @@ API de veículos com o objetivo de passar a localização, informações do veic
 
  <h1 align="center"> Objetivo e etapas do projeto </h1>
  
- Projeto consiste em uma API de veiculos com 5 endpoints que desenvolvida em Golang e Mysql.
+ Projeto consiste em uma API de veiculos com 5 endpoints que foram desenvolvida em Golang e Mysql.
  
  <h3 align="center"> Executar o projeto </h3>
  
@@ -12,11 +12,11 @@ API de veículos com o objetivo de passar a localização, informações do veic
  Para rodar executar o projeto:
   ⏺️  - Tenha o docker instalador na maquina:
           - no terminal digite  ( docker-compose up )
-  
+  <br>
   ⏺️  - Tenha o goleng e mysql instalador na maquina: 
           - execute o código da pasta db no terminal do mysql.
           - digite no terminal ( go run main.go )
-          
+   <br>       
    <h3 align="center"> Testar o Projeto </h3>     
    
   ⏺️ - No projeto tem uma pasta com o nome (Teste)
