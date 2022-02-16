@@ -20,7 +20,7 @@ func (fleet_alert *Fleet_alert) Preparar() error {
 }
 func (fleet_alert *Fleet_alert) validar() error {
 	if fleet_alert.Webhook == "" {
-		return errors.New("Nome obrigatorio")
+		return errors.New("webhook obrigatorio")
 		//validar a url no get
 	}
 	return nil

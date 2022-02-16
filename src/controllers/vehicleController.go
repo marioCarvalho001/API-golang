@@ -36,7 +36,7 @@ func BuscarVehicle(w http.ResponseWriter, r *http.Request) {
 		respostas.Erro(w, http.StatusInternalServerError, erro)
 		return
 	}
-	respostas.JSON(w, 200, vehicles)
+	respostas.JSON(w, http.StatusCreated, vehicles)
 }
 
 func CriarVehicle(w http.ResponseWriter, r *http.Request) {
@@ -67,5 +67,5 @@ func CriarVehicle(w http.ResponseWriter, r *http.Request) {
 		respostas.Erro(w, http.StatusInternalServerError, erro)
 		return
 	}
-	respostas.JSON(w, 201, fmt.Sprintf("id: %d", vehicle.ID))
+	respostas.JSON(w, http.StatusCreated, fmt.Sprintf("id: %d", vehicle.ID))
 }

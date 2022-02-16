@@ -37,7 +37,7 @@ ENGINE = InnoDB;
 CREATE TABLE vehicle_position(
 	id INT NOT NULL AUTO_INCREMENT,
     vehicle_id INT,
-    times_stamp DATETIME,
+    times_stamp INT,
     latitude DOUBLE,
     longitude DOUBLE,
     current_speed DOUBLE,

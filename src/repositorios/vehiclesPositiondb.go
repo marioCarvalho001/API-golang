@@ -41,7 +41,7 @@ func UrlID(i uint64) {
 }
 
 func (i vposition) CriarPositionAtual(position models.Position) (uint64, error) {
-	statement, erro := i.db.Prepare("insert into vehicle_position ( times_stamp, latitude, longitude,current_speed, max_speed, vehicle_id) values (?,?,?,?,?,?) ")
+	statement, erro := i.db.Prepare("insert into vehicle_position ( times_stamp, latitude, longitude, current_speed, max_speed, vehicle_id) values (?,?,?,?,?,?) ")
 	if erro != nil {
 		return 0, erro
 	}

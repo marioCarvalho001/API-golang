@@ -1,0 +1,43 @@
+Estrutura do projeto 
+
+1 - golang
+    - Api 
+        - database
+            - Resetar o banco de dados:
+        - Fleet
+            - Get: listar todas as frotas (ok)
+            
+            - Post: Criar uma frota (ok)
+
+            - Regra: Deve validar se o nome e a velocidade são válidos. 
+                     Se algum campo não for válido, deve retornar HTTP Code 400.
+                     A velocidade deve ser maior que 0.
+
+        - Fleet_Alert
+            - Get: listar todas os alertas de uma frota (ok)
+              HTTP Code: 200
+
+            - Post: Criar um alerta para frota (ok) 
+              HTTP Code: 201
+            - Regra: Deve validar se a url é válida. Se não for válida, deve retornar HTTP Code 400.
+
+        - Vehicles
+            - Get: listar todas os veiculos (ok)
+
+            - Post: Criar um veiculo (ok)
+
+            - Regra: (get) Deve retornar o max_speed do veículo. 
+                     Caso o veículo não tenha max_speed definido, deve retornar o max_speed da frota.
+                     Deve validar se os campos são válidos.
+                     Se algum campo não for válido, deve retornar HTTP Code 400.
+                     O campo max_speed é opcional (pode ser nulo na request e base).
+                     
+
+        - Vehicle_Position 
+            - Get: listar toas as posições do veiculo (ok)
+
+            - Post: salva a posição do veiculo (ok)
+
+            - Regra: Deve validar se os campos são válidos.
+                     Se algum campo não for válido, deve retornar HTTP Code 400.
+        

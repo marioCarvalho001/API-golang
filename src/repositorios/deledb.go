@@ -12,12 +12,13 @@ func NovoRepotorioReset(db *sql.DB) *delete {
 	return &delete{db}
 }
 
-func (delet delete) Deletar() error {
-	statement, erro := delet.db.Prepare("delete from alert ")
+func (d *delete) Deletar() error {
+	statement, erro := d.db.Prepare("DROP DATABASE apidb")
 	if erro != nil {
 		return erro
 	}
 	defer statement.Close()
+
 	if _, erro = statement.Exec(); erro != nil {
 		return erro
 	}

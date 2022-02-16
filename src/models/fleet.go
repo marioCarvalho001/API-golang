@@ -26,7 +26,7 @@ func (fleet *Fleet) validar() error {
 
 	}
 	if fleet.Max_speed == 0 {
-		return errors.New("Max_vm é obrigatorio")
+		return errors.New("Max_speed é obrigatorio")
 	}
 	return nil
 }

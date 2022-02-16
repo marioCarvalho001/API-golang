@@ -12,7 +12,7 @@ type Vehicle struct {
 	Max_speed float64 `json:"max_speed"`
 }
 
-//Chamar os metodos e valida
+//Chamar os campos e valida
 func (vehicle *Vehicle) Preparar() error {
 	if erro := vehicle.validar(); erro != nil {
 		return erro
@@ -20,8 +20,11 @@ func (vehicle *Vehicle) Preparar() error {
 	return nil
 }
 func (vehicle *Vehicle) validar() error {
-	if vehicle.Max_speed == 0 {
-		return errors.New("Max_vm é obrigatorio")
+	if vehicle.Fleet_id == 0 {
+		return errors.New("Fleet_id name invalido")
+	}
+	if vehicle.Name == "" {
+		return errors.New("campo name invalido")
 	}
 	return nil
 }

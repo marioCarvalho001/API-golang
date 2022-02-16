@@ -1,0 +1,35 @@
+Execute os teste em ordem
+Observe o id do get anterior caso de algum problema com a 
+key strange
+
+/fleets
+{
+	"Name":"dcdd",
+	"Max_speed":44.50
+}
+
+/fleets/1/alerts
+
+{
+	"Webhook":"teste4"
+}
+
+/vehicles
+{   
+    "Name":"teste7",
+    "Fleet_id": 1,
+    "Max_speed": 50
+}
+
+/vehicles/1/positions
+
+{   
+   "Data" : 141 ,
+   "Latitude": 80,
+   "Longitude" : 50,
+   "Velocidade_atual" : 0,
+   "Max_speed" : 50
+}
+
+/database 
+-- apaga o banco de dados e finaliza a conexão com o golang

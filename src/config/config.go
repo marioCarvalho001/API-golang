@@ -26,6 +26,7 @@ func Carregar() {
 		Porta = 9000
 	}
 
+	//reune os dados de banco e user para estabelecer a conexão com o db
 	StringConecaoBanco = fmt.Sprintf("%s:%s@tcp(database:3306)/%s",
 		os.Getenv("DB_user"),
 		os.Getenv("DB_senha"),

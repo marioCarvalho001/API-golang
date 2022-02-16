@@ -35,7 +35,7 @@ func BuscarFleets(w http.ResponseWriter, r *http.Request) {
 		respostas.Erro(w, http.StatusInternalServerError, erro)
 		return
 	}
-	respostas.JSON(w, 200, fleet)
+	respostas.JSON(w, http.StatusCreated, fleet)
 
 }
 
@@ -72,6 +72,6 @@ func CriarFleets(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	respostas.JSON(w, 201, fmt.Sprintf("id: %d", fleet.ID))
+	respostas.JSON(w, http.StatusOK, fmt.Sprintf("id: %d", fleet.ID))
 
 }

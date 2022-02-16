@@ -33,7 +33,7 @@ func BuscarPosition(w http.ResponseWriter, r *http.Request) {
 		respostas.Erro(w, http.StatusInternalServerError, erro)
 		return
 	}
-	respostas.JSON(w, 200, vPosition)
+	respostas.JSON(w, http.StatusCreated, vPosition)
 }
 
 func CriarPosition(w http.ResponseWriter, r *http.Request) {
@@ -73,5 +73,5 @@ func CriarPosition(w http.ResponseWriter, r *http.Request) {
 		respostas.Erro(w, http.StatusInternalServerError, erro)
 		return
 	}
-	respostas.JSON(w, 201, position.ID)
+	respostas.JSON(w, http.StatusCreated, position.ID)
 }

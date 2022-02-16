@@ -37,11 +37,9 @@ func BuscarFleet_alert(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	respostas.JSON(w, 200, fleet_alert)
+	respostas.JSON(w, http.StatusOK, fleet_alert)
 
 }
-
-//Gabiarra para puxar o id da url
 
 func CriarFleet_alert(w http.ResponseWriter, r *http.Request) {
 
@@ -83,6 +81,6 @@ func CriarFleet_alert(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	respostas.JSON(w, 201, fleet_alert.ID)
+	respostas.JSON(w, http.StatusCreated, fleet_alert.ID)
 
 }
