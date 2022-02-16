@@ -8,11 +8,23 @@ API de veículos com o objetivo de passar a localização, informações do veic
  Para rodar executar o projeto:
   ⏺️  - Tenha o docker instalador na maquina:
           - no terminal digite  ( docker-compose up )
-      
-  ⏺️  - Tenha o docker instalador na maquina: 
+  
+  <h3 align="center"> Executar o projeto </h3>
+  
+  ⏺️  - Tenha o goleng e mysql instalador na maquina: 
           - execute o código da pasta db no terminal do mysql.
           - digite no terminal ( go run main.go )
+          
+   <h3 align="center"> Testar o Projeto </h3>     
+   
+  ⏺️ - No projeto tem uma pasta com o nome (Teste)
+      - Execute os teste com o uso do Postman seguindo a ordem de get e put com os endpoints e body que estão prontos no arquivo.
+  
+   <h3 align="center"> Status do projeto </h3>
+  
+ ✅ Desenvolvido
  
+ ❎ Em desenvolvimento
  
  EndPoints, Funcionalidade e informações dos dados.
  
