@@ -9,13 +9,13 @@ API de veículos com o objetivo de passar a localização, informações do veic
  <h3 align="center"> Executar o projeto </h3>
  
  
- Para rodar executar o projeto:
-  ⏺️  - Tenha o docker instalador na maquina:
-          - no terminal digite  ( docker-compose up )
+ Para rodar executar o projeto:<br>
+  ⏺️  - Tenha o docker instalador na maquina:<br>
+          - no terminal digite  ( docker-compose up )<br>
   <br>
-  ⏺️  - Tenha o goleng e mysql instalador na maquina: 
-          - execute o código da pasta db no terminal do mysql.
-          - digite no terminal ( go run main.go )
+  ⏺️  - Tenha o goleng e mysql instalador na maquina: <br>
+          - execute o código da pasta db no terminal do mysql.<br>
+          - digite no terminal ( go run main.go )<br>
    <br>       
    <h3 align="center"> Testar o Projeto </h3>     
    
